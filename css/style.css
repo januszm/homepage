@@ -4,8 +4,17 @@
 }
 
 .wrap{
-	max-width: 960px;
+	max-width: 1100px;
 	margin: 40px auto;
+}
+
+.sectionWrap{
+	margin-right:20px;
+	margin-left:20px;
+}
+
+nav{
+	max-height: 300px;
 }
 
 p.icon, p.headerName{
@@ -26,6 +35,7 @@ p.icon{
 
 p.icon a, ul.topnav a{
   text-decoration: none;
+  color: #ffffff;
 }
 
 p.icon a, p.icon a:visited, p.icon a:hover, p.icon a:active {
@@ -56,7 +66,7 @@ ul.topnav.responsive li {
 }
 
 ul.topnav.responsive li:hover, li:active{
-    background-color: #F2385A;
+    background-color: #F5C639;
     color: #FFFFFF;
 }
 
@@ -99,11 +109,12 @@ button.hire, button{
 }
 
 button.hire:hover, button:hover{
-	background-color: #01A5A8;
+	background-color: #F2385A;
+	border: solid #F2385A 2px;
  	color: #ffffff;
-	border: solid #01A5A8;
 	font-weight: bold;
 }
+
 
 .big{
 	font-size: 1.75em;
@@ -121,7 +132,7 @@ h3{
     -webkit-margin-after: 0em;
 }
 
-.skills{
+.skills, .blog{
 	max-width:960px;
 	display: table;
 	margin: 0 auto;
@@ -163,6 +174,10 @@ footer a{
 	color:#242D32;
 }
 
+button.submit:hover{
+	background-color:#01A5A8;
+	border: solid #01A5A8 2px;
+}
 /*Contact styles*/
 .contact{
 	background-color: #F2385A;
@@ -188,10 +203,66 @@ textarea{
 	border: solid #242D32 2px;
 }
 
+/*Slider portfoio*/
+.item p, .item.active p{
+	margin:3px 20px auto 20px;
+	max-width:700px;
+}
+
+
+.item h3,.item.active h3{
+	margin-top: 20px;
+}
+
+/*Other sections*/
+.professional, .team{
+	text-align: center;
+	margin: 0 auto 30px auto;
+}
+
+button.linkedin, button.hireTeam{
+	margin: 20px auto 40px auto;
+}
+
+
+
+.professional p, .team p{
+	margin: auto;
+	max-width: 960px;
+}
+
+.team{
+	background-color: #01A5A8;
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+
+/*Blog*/
+.box.blog img{
+	width:100%;
+	height: auto;
+}
+
+.box.blog p, .box.blog h3{
+	text-align: left;
+}
+
+.box.blog a{
+	color: #000000;
+	font-weight: bold;
+	float: right;
+}
+
+.box.blog a:visited{
+	color: inherit;
+}
+
+
 
 @media screen and (min-width:469px){
 	.heroImage{
 		height: 300px;
+		display: inline-block;
 	}
 }
 
@@ -216,13 +287,19 @@ textarea{
 
 	input{
 		display: inline-block;
+		margin: 0 auto;
 	}
 
 	textarea{
 		display: block;
-		margin: 0 auto;
-		width: 509px;
+		margin: 5px auto;
+		width: 510px;
 	}
+
+	.item p, .item.active p{
+	margin:3px auto;
+}
+
 
 }
 
@@ -231,9 +308,10 @@ textarea{
 
 
 	header{
-		width:80%;
+		max-width:960px;
 		margin: 0 auto;
 		display: block;	
+		position:relative;
 	}
 
 
@@ -246,10 +324,10 @@ textarea{
 
 	nav{
 		float:right;
-		width:80%;
+		width:100%;
 		position: absolute;
 		margin-top: 0px;
-		margin-right: 0px;
+		display:inline-block;
 	}	
 
 	ul.topnav{
@@ -309,5 +387,20 @@ textarea{
 		float: right;
 	}
 
+	/*portfolio slider*/
+
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+		line-height:1;
+		width:30%;
+		height: auto;
+		display: inline-block;
+		margin-left:20px;
+		margin-right:20px;
+	}
+
+	.sliderText {
+		width: 40%;
+		display: inline-block;
+	}
 
 }
