@@ -108,7 +108,7 @@ button.hire, button{
 	margin-top: 40px;
 }
 
-button.hire:hover, button:hover{
+button:hover{
 	background-color: #F2385A;
 	border: solid #F2385A 2px;
  	color: #ffffff;
@@ -174,7 +174,7 @@ footer a{
 	color:#242D32;
 }
 
-button.submit:hover{
+button.submit:hover, button.hire:hover{
 	background-color:#01A5A8;
 	border: solid #01A5A8 2px;
 }

@@ -10,9 +10,14 @@ function myFunction() {
     }
 }
 
+function hireFunction(){
+	document.getElementById('textarea').value = "I'm interested in hiring you! Please contact me ASAP.";
+
+}
+
 
 /*Scroll to selected section*/
-$(function() {
+$(function Scroll() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -26,5 +31,7 @@ $(function() {
     }
   });
 });
+
+/*Buttons actions*/
 
 

@@ -35,7 +35,7 @@
 					<p><span class="big">HI THERE!</span></p>
 					<p><span class="big">I AM <span class="bold">JANUSZ MORDARSKI</span></span></p>
 					<p><span>I'm a <span class="bold">Ruby on Rails</span> developer living in Cracow, Poland</span></p>
-					<button type="button" class="hire">HIRE ME!</button>
+					<a href="#contact"><button type="button" class="hire" id="hire" onclick="hireFunction()">HIRE ME!</button></a>
 					</div>
 			</div>
 		</section>
@@ -188,7 +188,7 @@
 			<form id="contact">
 				<input type="text" id="name" placeholder="Name" name="name">
 				<input type="email" id="email" name="email" placeholder="Email">
-				<textarea name="message" placeholder="Your message" form="contact"></textarea><br>
+				<textarea name="message" id="textarea" placeholder="Your message" form="contact">AAAA</textarea><br>
 				<button type="submit" class="submit" form="contact" value="Submit">SEND</button>
 			</form>
 
