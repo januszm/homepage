@@ -19,12 +19,12 @@
 		</div>
 		<nav>
 			<ul class="topnav" id="myTopnav">
-				<a href="#skills"><li>Skills and Services</li></a>
-				<a href="#portfolio"><li>Portfolio</li></a>
-				<a href="#experience"><li>Experience</li></a>
-				<a href="#team"><li>Need a team?</li></a>
-				<a href="#blog"><li>Blog</li></a>
-				<a href="#contact"><li>Contact</li></a>
+				<a href="#skills" class="scroll"><li>Skills and Services</li></a>
+				<a href="#portfolio" class="scroll"><li>Portfolio</li></a>
+				<a href="#experience" class="scroll"><li>Experience</li></a>
+				<a href="#team" class="scroll"><li>Need a team?</li></a>
+				<a href="#blog" class="scroll"><li>Blog</li></a>
+				<a href="#contact" class="scroll"><li>Contact</li></a>
 			</ul>
 		</nav>
 	</header>
@@ -35,7 +35,7 @@
 					<p><span class="big">HI THERE!</span></p>
 					<p><span class="big">I AM <span class="bold">JANUSZ MORDARSKI</span></span></p>
 					<p><span>I'm a <span class="bold">Ruby on Rails</span> developer living in Cracow, Poland</span></p>
-					<a href="#contact"><button type="button" class="hire" id="hire" onclick="hireFunction()">HIRE ME!</button></a>
+					<a href="#contact" class="scroll" ><button type="button" class="hire" id="hire" onclick="hireFunction()">HIRE ME!</button></a>
 					</div>
 			</div>
 		</section>
@@ -136,11 +136,11 @@
 			    </div>
 
 			    <!-- Left and right controls -->
-			    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			    <a class="left carousel-control" href="#myCarousel"  data-slide="prev">
 			      <i class="fa fa-arrow-left" aria-hidden="true"></i>
 			      <span class="sr-only">Previous</span>
 			    </a>
-			    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			    <a class="right carousel-control" href="#myCarousel"  data-slide="next">
 			      <i class="fa fa-arrow-right" aria-hidden="true"></i>
 			      <span class="sr-only">Next</span>
 			    </a>
@@ -188,7 +188,7 @@
 			<form id="contact">
 				<input type="text" id="name" placeholder="Name" name="name">
 				<input type="email" id="email" name="email" placeholder="Email">
-				<textarea name="message" id="textarea" placeholder="Your message" form="contact">AAAA</textarea><br>
+				<textarea name="message" id="textarea" placeholder="Your message" form="contact"></textarea><br>
 				<button type="submit" class="submit" form="contact" value="Submit">SEND</button>
 			</form>
 
