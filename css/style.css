@@ -11,11 +11,13 @@
 .sectionWrap{
 	margin-right:20px;
 	margin-left:20px;
+	height: auto;
 }
 
 nav{
 	max-height: 300px;
 }
+
 
 p.icon, p.headerName{
   display:inline-block;
@@ -60,9 +62,7 @@ ul.topnav.responsive {
 
 ul.topnav.responsive li {
     display: block;
-    height: 35px;
     color: #01A5A8;
-    padding: 15px 0px 0px 30px;
 }
 
 ul.topnav.responsive li:hover, li:active{
@@ -71,7 +71,10 @@ ul.topnav.responsive li:hover, li:active{
 }
 
 ul.topnav.responsive li a {
-  color: inherit;
+  	color: inherit;
+  	height: 35px;
+  	padding: 15px 0px 0px 30px;
+  	display: block;
 }
 
 ul.topnav{
@@ -83,7 +86,7 @@ ul.topnav{
 		background-size: cover;
 		background-position: center;
 		width: 100%;
-		height: 365px;
+		height: 100%;
 		text-align: center;
 		background-size: 100%;
 		background-repeat: no-repeat;
@@ -94,11 +97,33 @@ ul.topnav{
     	background-color: #F2385A;
     }
 
+.heroImageText {
+		padding-left: 15px;
+		padding-right: 15px;
+		height: 100%;
+		padding-bottom: 40px;
+	}
+
 .bold{
 	font-weight: bold; 
 }
 
-button.hire, button{
+
+a.hire, a.hireTeam, a.linkedin{
+	display: block;
+	margin: 0 auto;
+
+}
+
+a.hire p, a.hireTeam p, a.linkedin p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 11px;
+
+}
+
+
+a.hire, a.hireTeam, a.linkedin, button{	
 	background-color: #F5C639;
 	border: solid #F5C639;
 	color: #ffffff;
@@ -106,11 +131,17 @@ button.hire, button{
 	height: 40px;
 	font-weight: bold;
 	margin-top: 40px;
+	font-family: Arial;
+	text-decoration: none;
+	font-size:15px;
+
 }
 
-button:hover{
+
+
+button:hover, a.hireTeam:hover, a.linkedin:hover{
 	background-color: #F2385A;
-	border: solid #F2385A 2px;
+	border: solid #F2385A 3px;
  	color: #ffffff;
 	font-weight: bold;
 }
@@ -174,9 +205,9 @@ footer a{
 	color:#242D32;
 }
 
-button.submit:hover, button.hire:hover{
+button.submit:hover, a.hire:hover{
 	background-color:#01A5A8;
-	border: solid #01A5A8 2px;
+	border: solid #01A5A8 3px;
 }
 /*Contact styles*/
 .contact{
@@ -217,10 +248,12 @@ textarea{
 /*Other sections*/
 .professional, .team{
 	text-align: center;
-	margin: 0 auto 30px auto;
+	margin: 0 auto;
+	height: auto;
+	padding-bottom: 40px;
 }
 
-button.linkedin, button.hireTeam{
+button.linkedin {
 	margin: 20px auto 40px auto;
 }
 
@@ -234,7 +267,8 @@ button.linkedin, button.hireTeam{
 .team{
 	background-color: #01A5A8;
 	color: #ffffff;
-	margin-bottom: 30px;
+	height: auto;
+	
 }
 
 /*Blog*/
@@ -258,26 +292,18 @@ button.linkedin, button.hireTeam{
 }
 
 
-
-@media screen and (min-width:469px){
-	.heroImage{
-		height: 300px;
-		display: inline-block;
-	}
-}
-
 @media screen and (min-width: 768px){
 	.box:nth-child(even) {
 		margin: 50px 40px 60px 40px;
 		display:inline-block;
 		width: 38%;
-		float:left;
+		float:right;
 	}
 
 	.box:nth-child(odd){
 		display:inline-block;
 		width: 38%;
-		float:right;
+		float:left;
 	}
 
 	.contact p{
@@ -330,6 +356,8 @@ button.linkedin, button.hireTeam{
 		display:inline-block;
 	}	
 
+
+
 	ul.topnav{
 		display:inline-block;
 		list-style-type: none;
@@ -379,12 +407,12 @@ button.linkedin, button.hireTeam{
 
 	.box:nth-child(even) {
 		min-width: 40%;
-		float:left;
+		float:right;
 	}
 
 	.box:nth-child(odd){
 		min-width: 40%;
-		float: right;
+		float: left;
 	}
 
 	/*portfolio slider*/
