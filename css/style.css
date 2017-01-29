@@ -147,8 +147,13 @@ button:hover, a.hireTeam:hover, a.linkedin:hover{
 }
 
 
-.big{
+.big {
 	font-size: 1.75em;
+}
+
+h1{
+	font-size: 1em;
+	font-weight: normal;
 }
 
 h2{
