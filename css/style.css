@@ -98,6 +98,7 @@ ul.topnav {
   color: #ffffff;
   padding-top: 10px;
   background-color: #F2385A;
+  background: linear-gradient(150deg, #0fb8af 0%, #1fc8da 51%, #2cb5e7 75%);
 }
 
 .heroImageText {
@@ -380,7 +381,6 @@ button.linkedin {
 
   .heroImage {
     min-height: 454px;
-    background-image: url("../images/dev.jpeg");
   }
 
   .heroImageText {
