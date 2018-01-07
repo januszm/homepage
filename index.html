@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -204,7 +205,10 @@ I'm a certified Scrum Master and Product Owner, a driven person always focused o
 			<h2>CONTACT</h2>
 			<hr class="white">
 			<p>Need a developer or a team? Great! I'll be happy to help you! Let me know about your project or techology stack you are looking for. I'll reply to in 24h.</p>
-			<form id="contactme">
+			<form id="contactme" class="form" method="post" action="/mailer.php">
+				<?php $randomtoken = md5(uniqid(rand(), true)); ?>
+        <?php $_SESSION['csrfToken']=$randomtoken; ?>
+        <input type="hidden" name="csrfToken" value="<?php echo($_SESSION['csrfToken']) ?>" />
 				<input type="text" id="name" placeholder="Name" name="name">
 				<input type="email" id="email" name="email" placeholder="Email">
 				<textarea name="message" id="textarea" placeholder="Your message" form="contactme"></textarea><br>
@@ -222,5 +226,15 @@ I'm a certified Scrum Master and Product Owner, a driven person always focused o
 		</footer>
 
 	</main>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91645187-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
