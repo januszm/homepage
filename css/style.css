@@ -416,8 +416,8 @@ button.linkedin {
   /*portfolio slider*/
   .carousel-inner>.item>a>img, .carousel-inner>.item>img {
     line-height: 1;
-    width: 30%;
-    height: auto;
+    height: 345px;
+    width: auto;
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
